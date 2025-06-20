@@ -1,0 +1,4 @@
+python tools/train.py -f datasets/yolox_s.py -d 1 -b 8 -o -c datasets/yolox_s.pth  
+
+python tools/demo.py image -f datasets/yolox_s.py -c datasets/paths/latest_ckpt.pth --path /home/chris/Documents/PROJECTS/YOLOX/assets/test.jpg --conf 0.5 --nms 0.45 --tsize 640 --save_result --device gpu  
+python tools/demo.py video -f datasets/yolox_s.py -c datasets/paths/latest_ckpt.pth --path /home/chris/Documents/PROJECTS/YOLOX/assets/test.jpg --conf 0.5 --nms 0.45 --tsize 640 --save_result --device gpu  
